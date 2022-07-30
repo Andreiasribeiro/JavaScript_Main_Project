@@ -96,41 +96,4 @@ const game = () => {
   }
 };
 
-// function game(rounds) {
-//   let playerScore = 0;
-//   let computerScore = 0;
-//   for (let i = 0; i < rounds; i++) {
-//     const userChoice = prompt("Choose: Rock, Paper or Scissors?");
-//     if (userChoice === null) {
-//       console.log("Shut down!");
-//       return userChoice;
-//     }
-
-//     const computerChoice = computerPlay();
-//     const { status, message } = playRound(userChoice, computerChoice);
-//     console.log(message);
-//     switch (status) {
-//       case "Win":
-//         playerScore++;
-//         break;
-//       case "Loser":
-//         computerScore++;
-//         break;
-//       case "Draw":
-//         break;
-//       case "Error":
-//         i--;
-//         break;
-//     }
-//   }
-//   if (playerScore > computerScore) {
-//     console.log("Final result: You won! Congratulation!!!");
-//   } else if (playerScore < computerScore) {
-//     console.log("Final result: You lost! Good luck next time");
-//   } else {
-//     console.log("Final result: Draw! Good luck next time.");
-//   }
-// }
-
-// console.log(game());
 game();
